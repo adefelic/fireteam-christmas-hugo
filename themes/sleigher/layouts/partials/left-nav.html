@@ -1,0 +1,22 @@
+{{ $pages := .Site.RegularPages}}
+<ul class="nav-list">
+	<div class="nav-list-item">+</div>
+	{{ range .Site.Menus.main }}
+	<li class="nav-list-item">
+		<a href="{{ .PageRef }}">
+			{{ $text := print .Name | safeHTML }}
+			{{ $text }}
+		</a>
+	</li>
+	<ul class="post-list">
+		{{ range where $pages "Section" .Name }}
+		<li class="post-list-item">
+			<a href="{{ .Permalink }}">
+				{{ $text := print .Title | safeHTML }}
+				{{ $text }}
+			</a>
+		</li>
+		{{ end }}
+	</ul>
+	{{ end }}
+</ul>

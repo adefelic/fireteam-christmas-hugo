@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item-head">
+            {{- partial "header.html" . -}}
+        </div>
+        <div class="grid-item-nav">
+            {{- partial "left-nav.html" . -}}
+        </div>
+        <div class="grid-item-main">
+            {{- block "main" . }}{{- end }}
+        </div>
+        <div class="grid-item-foot">
+            {{- partial "footer.html" . -}}
+        </div>
+    </div>
+</body>
+
+</html>

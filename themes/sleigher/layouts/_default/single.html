@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="single-container">
+	<h1 class="single-title">{{ .Title }}</h1>
+	<div class="single-metadata">
+		{{ partial "metadata.html" . }}
+	</div>
+	<div class="single-main">
+		{{ .Content }}
+	</div>
+</div>
+{{ end }}

@@ -1,0 +1,126 @@
+html {
+	box-sizing: border-box;
+}
+
+/* necessary? above and below */
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: unset;
+}
+
+
+/* todo make these text styles or something */
+
+p {
+	font-size: 1.5rem;
+	font-family: "Courier New";
+	color: #d08f06;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	font-size: 1.5rem;
+	font-family: "Courier New";
+	color: #35c599;
+}
+
+a {
+	color: #efefef;
+}
+
+/* grid */
+
+.grid-container {
+	display: grid;
+	grid-template-rows: auto 800px auto;
+	grid-template-columns: 200px auto;
+	grid-template-areas:
+		"head head"
+		"nav  main"
+		"foot foot";
+}
+
+.grid-item-head {
+	grid-area: head;
+	background-color: #069e70;
+}
+
+.grid-item-nav {
+	grid-area: nav;
+	background-color: #069e70;
+}
+
+.grid-item-main {
+	grid-area: main;
+	background-color: #363025;
+}
+
+.grid-item-foot {
+	grid-area: foot;
+	background-image: url("images/dim-woods.jpg");
+	background-color: #ddd;
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+}
+
+/* header */
+
+.title {
+	margin: 2px 0 8px 18px;
+	font-size: 2rem;
+	font-family: "arial";
+	font-weight: lighter;
+	color: #fff;
+}
+
+/* left nav */
+.nav-list {
+	margin: 0 0 0 18px;
+	padding: unset;
+	list-style-type: none;
+}
+
+.nav-list-item {
+	margin: 4px 0 10px 0;
+	font-size: 1.5rem;
+	font-family: "arial";
+	font-style: italic;
+	color: #fff;
+}
+
+/* single */
+
+.single-container {
+	margin: 6px 0 0 14px;
+}
+
+.single-title {
+	margin: unset;
+	color: #fff;
+	font-size: 2.5rem;
+	font-family: "Courier New";
+	font-weight: lighter;
+}
+
+.single-metadata {
+	color: #fff;
+	font-size: 1.5rem;
+	font-family: "Courier New";
+	font-weight: lighter;
+}
+
+.single-main {
+	margin: 0 0 0 20px;
+}
