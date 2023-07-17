@@ -1,7 +1,9 @@
 ---
 title: "fc homepage"
 date: 2023-07-08T14:33:57-04:00
-draft: true
+draft: false
 ---
 
-this is the homepage
+
+![woods](/dim-path.jpg)
+

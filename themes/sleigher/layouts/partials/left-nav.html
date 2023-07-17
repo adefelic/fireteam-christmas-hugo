@@ -3,15 +3,15 @@
 	<div class="nav-list-item">+</div>
 	{{ range .Site.Menus.main }}
 	<li class="nav-list-item">
-		<a href="{{ .PageRef }}">
+		<a class="nav-link">
 			{{ $text := print .Name | safeHTML }}
 			{{ $text }}
 		</a>
 	</li>
-	<ul class="post-list">
+	<ul class="page-list">
 		{{ range where $pages "Section" .Name }}
-		<li class="post-list-item">
-			<a href="{{ .Permalink }}">
+		<li class="page-list-item">
+			<a class="no-underline nav-link" href="{{ .Permalink }}">
 				{{ $text := print .Title | safeHTML }}
 				{{ $text }}
 			</a>

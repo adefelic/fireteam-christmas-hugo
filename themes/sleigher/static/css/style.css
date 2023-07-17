@@ -1,24 +1,18 @@
-html {
-	box-sizing: border-box;
-}
-
-/* necessary? above and below */
-
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-}
-
 body {
 	margin: unset;
 }
 
+/* text styles */
 
-/* todo make these text styles or something */
+h2 {
+	font-size: 1.8rem;
+	font-family: "Courier New";
+	font-weight: lighter;
+	color: #d08f06;
+}
 
 p {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	font-family: "Courier New";
 	color: #d08f06;
 }
@@ -28,25 +22,22 @@ ul {
 }
 
 li {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	font-family: "Courier New";
 	color: #35c599;
-}
-
-a {
-	color: #efefef;
 }
 
 /* grid */
 
 .grid-container {
 	display: grid;
-	grid-template-rows: auto 800px auto;
-	grid-template-columns: 200px auto;
+	grid-template-rows: auto minmax(600px, 1fr);
+	grid-template-columns: 180px auto;
 	grid-template-areas:
 		"head head"
-		"nav  main"
-		"foot foot";
+		"nav  main";
+	width: 100vw;
+	height: 100vh;
 }
 
 .grid-item-head {
@@ -82,10 +73,16 @@ a {
 	font-size: 2rem;
 	font-family: "arial";
 	font-weight: lighter;
-	color: #fff;
+	color: #efefef;
 }
 
 /* left nav */
+
+.nav-link {
+	color: #efefef;
+	text-decoration: underline;
+}
+
 .nav-list {
 	margin: 0 0 0 18px;
 	padding: unset;
@@ -97,7 +94,24 @@ a {
 	font-size: 1.5rem;
 	font-family: "arial";
 	font-style: italic;
-	color: #fff;
+	color: #efefef;
+}
+
+.page-list {
+	margin: 0 0 0 18px;
+	padding: unset;
+	list-style-type: none;
+}
+
+.page-list-item {
+	margin: 4px 0 10px 0;
+	font-size: 1rem;
+	font-family: "Courier New";
+	font-style: italic;
+}
+
+.no-underline {
+	text-decoration: none;
 }
 
 /* single */
@@ -108,14 +122,14 @@ a {
 
 .single-title {
 	margin: unset;
-	color: #fff;
+	color: #efefef;
 	font-size: 2.5rem;
 	font-family: "Courier New";
 	font-weight: lighter;
 }
 
 .single-metadata {
-	color: #fff;
+	color: #efefef;
 	font-size: 1.5rem;
 	font-family: "Courier New";
 	font-weight: lighter;
@@ -123,4 +137,8 @@ a {
 
 .single-main {
 	margin: 0 0 0 20px;
+}
+
+.single-img {
+	margin: 0 0 0 10px;
 }

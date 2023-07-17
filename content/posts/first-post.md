@@ -1,9 +1,9 @@
 ---
 title: "first post"
 date: 2023-07-08T14:16:56-04:00
-draft: true
+draft: false
 ---
 
-## hi
+## o/
 
-here is some text for the first post.
+thought i'd make a web site

@@ -2,14 +2,15 @@ baseURL = 'https://fireteam.christmas/'
 languageCode = 'en-us'
 title = 'fireteam christmas'
 theme = 'sleigher'
+assetDir = 'static'
 [menu]
 	[[menu.main]]
 		name = 'posts'
-		pageRef = '/posts'
+#		pageRef = '/posts'
 		weight = 1
 	[[menu.main]]
 		name = 'recipes'
-		pageRef = '/recipes'
+#		pageRef = '/recipes'
 		weight = 2
 #	[[menu.main]]
 #		name = 'tags'
