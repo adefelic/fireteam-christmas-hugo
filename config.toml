@@ -5,8 +5,8 @@ theme = 'sleigher'
 assetDir = 'static'
 [menu]
 	[[menu.main]]
-		name = 'posts'
-#		pageRef = '/posts'
+		name = 'other'
+#		pageRef = '/other'
 		weight = 1
 	[[menu.main]]
 		name = 'recipes'

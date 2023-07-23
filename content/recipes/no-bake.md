@@ -1,11 +1,11 @@
 ---
-title: "no bakes"
+title: "no bake"
 date: 2023-07-08T14:41:55-04:00
 draft: false
 ---
 
 * 2 cups sugar
-* 4 cup butter
+* 4 cups butter
 * 1/3 cup cocoa
 * 1/2 cup milk
 
