@@ -2,6 +2,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    {{ $now := (now).YearDay }}
+    {{ $seasonal_css := "/css/early-winter.css"}}
+    {{ if lt $now 15 }} {{ $seasonal_css := "/css/early-winter.css"}}
+    {{ else if lt $now 60}} {{ $seasonal_css = "/css/late-winter.css"}}
+    {{ else if lt $now 105}} {{ $seasonal_css = "/css/early-spring.css"}}
+    {{ else if lt $now 150}} {{ $seasonal_css = "/css/late-spring.css"}}
+    {{ else if lt $now 195}} {{ $seasonal_css = "/css/early-summer.css"}}
+    {{ else if lt $now 240}} {{ $seasonal_css = "/css/late-summer.css"}}
+    {{ else if lt $now 285}} {{ $seasonal_css = "/css/early-fall.css"}}
+    {{ else if lt $now 330}} {{ $seasonal_css = "/css/late-fall.css"}}
+    {{ else if lt $now 375}} {{ $seasonal_css = "/css/early-winter.css"}}
+    {{ end }}
+    <link rel="stylesheet" type="text/css" href="{{ $seasonal_css }}">
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
