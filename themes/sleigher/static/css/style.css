@@ -8,7 +8,6 @@
 	}
 }
 
-
 body {
 	margin: unset;
 }
@@ -28,7 +27,6 @@ html {
 		font-size: 18px;
 	}
 }
-
 
 /* text styles */
 
@@ -118,11 +116,9 @@ li {
 	list-style-type: none;
 }
 
-
-
 .nav-list-item {
 	margin: 4px 0 10px 0;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	font-family: "arial";
 	font-style: italic;
 	color: #efefef;
@@ -166,7 +162,6 @@ li {
 	font-family: "Courier New";
 	font-weight: lighter;
 	line-height: 2.2rem;
-
 }
 
 .single-main {
