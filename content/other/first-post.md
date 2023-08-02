@@ -1,9 +1,10 @@
 ---
-title: "first post"
+title: "computer ghost ouija board"
 date: 2023-07-08T14:16:56-04:00
 draft: false
 ---
 
-## o/
+yes no
+## 0               1
 
-thought i'd make a web site
+goodbye

@@ -1,5 +1,14 @@
 :root {
 	--main-side-margin: 10px;
+	--greenblue: #069e70;
+	--bright-greenblue: #35c599;
+	--greenblue-d: #25896A;
+	--greenblue-l: #44b694;
+	--greenblue-ll: #a2dbc9;
+	--greenblue-lll: #e0f3ed;
+	/* remove? */
+	--grayish: #363025;
+	--orange: #d08f06;
 }
 
 @media only screen and (min-width: 600px) {
@@ -51,7 +60,7 @@ ul {
 li {
 	font-size: 1.4rem;
 	font-family: "Courier New";
-	color: #35c599;
+	color: var(--bright-greenblue);
 }
 
 /* grid */
@@ -69,18 +78,142 @@ li {
 
 .grid-item-head {
 	grid-area: head;
-	background-color: #069e70;
+	background-color: var(--greenblue);
 }
 
 .grid-item-nav {
 	grid-area: nav;
-	background-color: #069e70;
+	background-color: var(--greenblue);
+}
+
+/*
+
+rain todo
+
+@keyframes rainfall {
+	0% {
+		background-position: 0rem 0rem;
+		background-image: repeating-linear-gradient(88deg,
+			var(--greenblue-d) 0,
+			var(--greenblue-d) .1rem,
+			#eee0 .1rem,
+			#eee0 50%);
+
+	}
+
+	50% {
+		background-image: repeating-linear-gradient(88deg,
+			var(--greenblue-lll) 0,
+			var(--greenblue-lll) .1rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+
+	51% {
+		background-image: repeating-linear-gradient(88deg,
+			var(--greenblue-d) 0,
+			var(--greenblue-d) .1rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+
+	100% {
+		background-position: 1rem 30rem;
+		background-image: repeating-linear-gradient(88deg,
+			var(--greenblue-d) 0,
+			var(--greenblue-d) .1rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
 }
 
 .grid-item-main {
 	grid-area: main;
-	background-color: #363025;
+	background-color: var(--grayish);
+	background-size: 1rem 30rem;
+	animation-name: rainfall;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
+
+*/
+
+@keyframes horizontalscroll {
+
+	0% {
+		background-position: 0rem 0rem;
+	}
+
+	100% {
+		background-position: 1rem 30rem;
+	}
+}
+
+@keyframes lightning {
+	0% {
+		background-image: repeating-linear-gradient(90deg,
+			var(--greenblue-d) 0,
+			var(--greenblue-d) .01rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+
+	92% {
+		background-image: repeating-linear-gradient(90deg,
+			var(--greenblue-d) 0,
+			var(--greenblue-d) .01rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+
+	93% {
+		background-image: repeating-linear-gradient(90deg,
+			var(--greenblue-ll) 0,
+			var(--greenblue-ll) .1rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+
+	96% {
+		background-image: repeating-linear-gradient(90deg,
+			var(--greenblue-d) 0,
+			var(--greenblue-d) .01rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+
+	98% {
+		background-image: repeating-linear-gradient(90deg,
+			var(--greenblue-d) 0,
+			var(--greenblue-d) .01rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+
+	100% {
+		background-image: repeating-linear-gradient(90deg,
+			var(--greenblue-ll) 0,
+			var(--greenblue-ll) .1rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+}
+
+.grid-item-main {
+	grid-area: main;
+	background-color: var(--grayish);
+	background-size: 1rem 30rem;
+	background-image: repeating-linear-gradient(90deg,
+		var(--greenblue-d) 0,
+		var(--greenblue-d) .1rem,
+		#eee0 .1rem,
+		#eee0 50%);
+	animation:
+		horizontalscroll 2s linear infinite,
+		lightning 10s steps(200, jump-start) infinite;
+}
+
 
 .grid-item-foot {
 	grid-area: foot;
@@ -171,3 +304,16 @@ li {
 .single-img {
 	max-width: 100%;
 }
+
+/*background-color: #e5e5f7;
+opacity: 0.8;
+background-size: 18px 18px;
+background-image:  repeating-linear-gradient(to right, #444cf7, #444cf7 0.9px, #e5e5f7 0.9px, #e5e5f7);
+
+background-color: #e5e5f7;
+opacity: 0.8;
+background-size: 9px 9px;
+background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 0.9px, #e5e5f7 0, #e5e5f7 50%);*/
+
+
+/* FOOLIN AROUND */
