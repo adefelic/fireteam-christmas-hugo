@@ -12,9 +12,8 @@ assetDir = 'static'
 		name = 'recipes'
 #		pageRef = '/recipes'
 		weight = 2
-#	[[menu.main]]
-#		name = 'tags'
-#		pre = 'tags'
-#		url = '/tags/'
-#		weight = 3
+	[[menu.main]]
+		name = 'transcriptions'
+#		pageRef = '/transcriptions'
+		weight = 3
 

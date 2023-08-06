@@ -200,9 +200,7 @@ rain todo
 	}
 }
 
-.grid-item-main {
-	grid-area: main;
-	background-color: var(--grayish);
+.thunderstorm {
 	background-size: 1rem 30rem;
 	background-image: repeating-linear-gradient(90deg,
 		var(--greenblue-d) 0,
@@ -212,6 +210,12 @@ rain todo
 	animation:
 		horizontalscroll 2s linear infinite,
 		lightning 10s steps(200, jump-start) infinite;
+
+}
+
+.grid-item-main {
+	grid-area: main;
+	background-color: var(--grayish);
 }
 
 
