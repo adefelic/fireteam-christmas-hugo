@@ -1,5 +1,5 @@
 ---
-title: "kf4 - widda queen's lair"
+title: "king's field: the ancient city - widda queen's lair"
 date: 2023-08-06T13:10:23-04:00
 draft: false
 ---

@@ -1,5 +1,5 @@
 ---
-title: "smtdds1 - muladhara"
+title: "shin megami tensei digital devil saga 1 - muladhara"
 date: 2023-08-06T12:57:32-04:00
 draft: false
 ---
