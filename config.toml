@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'fireteam christmas'
 theme = 'sleigher'
 assetDir = 'static'
+googleAnalytics = 'G-M447GK70GX'
 [menu]
 	[[menu.main]]
 		name = 'other'
