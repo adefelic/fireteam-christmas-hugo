@@ -2,6 +2,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/weather.css">
     {{ $now := (now).YearDay }}
     {{ $seasonal_css := "/css/early-winter.css"}}
     {{ if lt $now 15 }} {{ $seasonal_css := "/css/early-winter.css"}}
@@ -15,6 +16,7 @@
     {{ else if lt $now 375}} {{ $seasonal_css = "/css/early-winter.css"}}
     {{ end }}
     <link rel="stylesheet" type="text/css" href="{{ $seasonal_css }}">
+    <script language="javascript" type="text/javascript" src="{{ "/js/nav.js" | urlize | relURL }}"></script>
     <script language="javascript" type="text/javascript" src="{{ "/js/suncalc.js" | urlize | relURL }}"></script>
     <script language="javascript" type="text/javascript" src="{{ "/js/moon.js" | urlize | relURL }}"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">

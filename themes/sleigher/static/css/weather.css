@@ -1,0 +1,126 @@
+/*
+
+rain todo
+
+@keyframes rainfall {
+	0% {
+		background-position: 0rem 0rem;
+		background-image: repeating-linear-gradient(88deg,
+			var(--greenblue-d) 0,
+			var(--greenblue-d) .1rem,
+			#eee0 .1rem,
+			#eee0 50%);
+
+	}
+
+	50% {
+		background-image: repeating-linear-gradient(88deg,
+			var(--greenblue-lll) 0,
+			var(--greenblue-lll) .1rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+
+	51% {
+		background-image: repeating-linear-gradient(88deg,
+			var(--greenblue-d) 0,
+			var(--greenblue-d) .1rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+
+	100% {
+		background-position: 1rem 30rem;
+		background-image: repeating-linear-gradient(88deg,
+			var(--greenblue-d) 0,
+			var(--greenblue-d) .1rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+}
+
+.grid-item-main {
+	grid-area: main;
+	background-color: var(--grayish);
+	background-size: 1rem 30rem;
+	animation-name: rainfall;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+*/
+
+@keyframes horizontalscrollrain {
+
+	0% {
+		background-position: 0rem 0rem;
+	}
+
+	100% {
+		background-position: 1rem 30rem;
+	}
+}
+
+@keyframes lightning {
+	0% {
+		background-image: repeating-linear-gradient(90deg,
+			var(--nav-color-dark) 0,
+			var(--nav-color-dark) .01rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+
+	92% {
+		background-image: repeating-linear-gradient(90deg,
+			var(--nav-color-dark) 0,
+			var(--nav-color-dark) .01rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+
+	93% {
+		background-image: repeating-linear-gradient(90deg,
+			var(--nav-color-light) 0,
+			var(--nav-color-light) .1rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+
+	96% {
+		background-image: repeating-linear-gradient(90deg,
+			var(--gnav-color-dark) 0,
+			var(--gnav-color-dark) .01rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+
+	98% {
+		background-image: repeating-linear-gradient(90deg,
+			var(--nav-color-dark) 0,
+			var(--nav-color-dark) .01rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+
+	100% {
+		background-image: repeating-linear-gradient(90deg,
+			var(--nav-color-light) 0,
+			var(--nav-color-light) .1rem,
+			#eee0 .1rem,
+			#eee0 50%);
+	}
+}
+
+.thunderstorm {
+	background-size: 1rem 30rem;
+	background-image: repeating-linear-gradient(90deg,
+		var(--nav-color-dark) 0,
+		var(--nav-color-dark) .1rem,
+		#eee0 .1rem,
+		#eee0 50%);
+	animation:
+		horizontalscrollrain 2s linear infinite,
+		lightning 10s steps(200, jump-start) infinite;
+
+}

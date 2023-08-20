@@ -1,15 +1,39 @@
 :root {
 	--main-side-margin: 10px;
+
+	/* color scheme 1 */
 	--greenblue: #069e70;
-	--bright-greenblue: #35c599;
+	--greenblue-b: #35c599;
 	--greenblue-d: #25896A;
 	--greenblue-l: #44b694;
 	--greenblue-ll: #a2dbc9;
 	--greenblue-lll: #e0f3ed;
-	/* remove? */
 	--grayish: #363025;
 	--orange: #d08f06;
+
+	/* color scheme 2, in progress */
+	--dirt: #431701;
+	--lettuce: #6a0113;
+	--lettuce-b: #89031b;
+	--straw: #ceb665;
+
+	--nav-color: var(--greenblue);
+	--nav-color-bright: var(--greenblue-b);
+	--nav-color-light: var(--greenblue-ll);
+	--nav-color-dark: var(--greenblue-d);
+	--main-background-color: var(--grayish);
+	--text-color: var(--orange);
+
+	/*	--nav-color: var(--lettuce);
+	--nav-color-bright: var(--lettuce-b);
+	--nav-color-light: var(--lettuce);
+	--nav-color-dark: var(--lettuce);
+	--main-background-color: var(--dirt);
+	--text-color: var(--straw);
+	*/
 }
+
+
 
 @media only screen and (min-width: 600px) {
 	:root {
@@ -43,13 +67,13 @@ h2 {
 	font-size: 1.8rem;
 	font-family: "Courier New";
 	font-weight: lighter;
-	color: #d08f06;
+	color: var(--text-color);
 }
 
 p {
 	font-size: 1.4rem;
 	font-family: "Courier New";
-	color: #d08f06;
+	color: var(--text-color);
 }
 
 ul {
@@ -60,7 +84,7 @@ ul {
 li {
 	font-size: 1.4rem;
 	font-family: "Courier New";
-	color: var(--bright-greenblue);
+	color: var(--nav-color-bright);
 }
 
 /* grid */
@@ -74,148 +98,35 @@ li {
 		"nav  main";
 	width: 100vw;
 	height: 100vh;
+	transition: 300ms;
 }
+
+/*.grid-container:has(.nav:hover) {
+	grid-template-columns: 10% 5fr;
+}*/
+
+/*.grid-container-nav-collapsed {
+	grid-template-columns: 1fr 5fr;
+
+}
+
+.grid-container-nav-expanded {
+	grid-template-columns: 1fr 5fr;
+}*/
 
 .grid-item-head {
 	grid-area: head;
-	background-color: var(--greenblue);
+	background-color: var(--nav-color);
 }
 
 .grid-item-nav {
 	grid-area: nav;
-	background-color: var(--greenblue);
-}
-
-/*
-
-rain todo
-
-@keyframes rainfall {
-	0% {
-		background-position: 0rem 0rem;
-		background-image: repeating-linear-gradient(88deg,
-			var(--greenblue-d) 0,
-			var(--greenblue-d) .1rem,
-			#eee0 .1rem,
-			#eee0 50%);
-
-	}
-
-	50% {
-		background-image: repeating-linear-gradient(88deg,
-			var(--greenblue-lll) 0,
-			var(--greenblue-lll) .1rem,
-			#eee0 .1rem,
-			#eee0 50%);
-	}
-
-	51% {
-		background-image: repeating-linear-gradient(88deg,
-			var(--greenblue-d) 0,
-			var(--greenblue-d) .1rem,
-			#eee0 .1rem,
-			#eee0 50%);
-	}
-
-	100% {
-		background-position: 1rem 30rem;
-		background-image: repeating-linear-gradient(88deg,
-			var(--greenblue-d) 0,
-			var(--greenblue-d) .1rem,
-			#eee0 .1rem,
-			#eee0 50%);
-	}
+	background-color: var(--nav-color);
 }
 
 .grid-item-main {
 	grid-area: main;
-	background-color: var(--grayish);
-	background-size: 1rem 30rem;
-	animation-name: rainfall;
-	animation-duration: 4s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-
-*/
-
-@keyframes horizontalscroll {
-
-	0% {
-		background-position: 0rem 0rem;
-	}
-
-	100% {
-		background-position: 1rem 30rem;
-	}
-}
-
-@keyframes lightning {
-	0% {
-		background-image: repeating-linear-gradient(90deg,
-			var(--greenblue-d) 0,
-			var(--greenblue-d) .01rem,
-			#eee0 .1rem,
-			#eee0 50%);
-	}
-
-	92% {
-		background-image: repeating-linear-gradient(90deg,
-			var(--greenblue-d) 0,
-			var(--greenblue-d) .01rem,
-			#eee0 .1rem,
-			#eee0 50%);
-	}
-
-	93% {
-		background-image: repeating-linear-gradient(90deg,
-			var(--greenblue-ll) 0,
-			var(--greenblue-ll) .1rem,
-			#eee0 .1rem,
-			#eee0 50%);
-	}
-
-	96% {
-		background-image: repeating-linear-gradient(90deg,
-			var(--greenblue-d) 0,
-			var(--greenblue-d) .01rem,
-			#eee0 .1rem,
-			#eee0 50%);
-	}
-
-	98% {
-		background-image: repeating-linear-gradient(90deg,
-			var(--greenblue-d) 0,
-			var(--greenblue-d) .01rem,
-			#eee0 .1rem,
-			#eee0 50%);
-	}
-
-	100% {
-		background-image: repeating-linear-gradient(90deg,
-			var(--greenblue-ll) 0,
-			var(--greenblue-ll) .1rem,
-			#eee0 .1rem,
-			#eee0 50%);
-	}
-}
-
-.thunderstorm {
-	background-size: 1rem 30rem;
-	background-image: repeating-linear-gradient(90deg,
-		var(--greenblue-d) 0,
-		var(--greenblue-d) .1rem,
-		#eee0 .1rem,
-		#eee0 50%);
-	animation:
-		horizontalscroll 2s linear infinite,
-		lightning 10s steps(200, jump-start) infinite;
-
-}
-
-.grid-item-main {
-	grid-area: main;
-	background-color: var(--grayish);
+	background-color: var(--main-background-color);
 }
 
 
@@ -308,16 +219,3 @@ rain todo
 .single-img {
 	max-width: 100%;
 }
-
-/*background-color: #e5e5f7;
-opacity: 0.8;
-background-size: 18px 18px;
-background-image:  repeating-linear-gradient(to right, #444cf7, #444cf7 0.9px, #e5e5f7 0.9px, #e5e5f7);
-
-background-color: #e5e5f7;
-opacity: 0.8;
-background-size: 9px 9px;
-background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 0.9px, #e5e5f7 0, #e5e5f7 50%);*/
-
-
-/* FOOLIN AROUND */
