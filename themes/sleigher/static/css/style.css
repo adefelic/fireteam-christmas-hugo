@@ -35,6 +35,7 @@
 
 
 
+/* apparently i should make these into percentages */
 @media only screen and (min-width: 600px) {
 	:root {
 		--main-side-margin: 14px;
@@ -51,7 +52,7 @@ html {
 
 @media only screen and (min-width: 600px) {
 	html {
-		font-size: 16px;
+		font-size: 100%;
 	}
 }
 
@@ -91,28 +92,16 @@ li {
 
 .grid-container {
 	display: grid;
-	grid-template-rows: auto 1fr;
-	grid-template-columns: 1fr 5fr;
-	grid-template-areas:
-		"head head"
-		"nav  main";
+	grid: "head head" auto "nav main" 1fr / 12rem 1fr;
 	width: 100vw;
 	height: 100vh;
 	transition: 300ms;
 }
 
-/*.grid-container:has(.nav:hover) {
-	grid-template-columns: 10% 5fr;
-}*/
 
-/*.grid-container-nav-collapsed {
-	grid-template-columns: 1fr 5fr;
-
+.grid-container-nav-collapsed {
+	grid: "head head" auto "nav main" 1fr / 2rem 1fr;
 }
-
-.grid-container-nav-expanded {
-	grid-template-columns: 1fr 5fr;
-}*/
 
 .grid-item-head {
 	grid-area: head;
