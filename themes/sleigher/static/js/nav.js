@@ -1,14 +1,16 @@
 if (document.readyState !== 'loading') {
 	addNavClickListener();
 } else {
-    document.addEventListener('DOMContentLoaded', function () {
-        addNavClickListener();
-    });
+	document.addEventListener('DOMContentLoaded', function() {
+		addNavClickListener();
+	});
 }
 
 function addNavClickListener() {
-		document.querySelector("#nav-button").addEventListener("click", (event) => {
+	const navButton = document.querySelector("#nav-button");
+	navButton.addEventListener("click", (event) => {
 		document.querySelector("#grid-container").classList.toggle("grid-container-nav-collapsed");
-	    // element.innerHTML += "Fuction executed! "
+		// todo find a way to toggle inner text
+		// navButton.innerHTML += "Fuction executed! "
 	});
 }

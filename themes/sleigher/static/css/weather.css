@@ -1,8 +1,4 @@
-/*
-
-rain todo
-
-@keyframes rainfall {
+/*rain todo @keyframes rainfall {
 	0% {
 		background-position: 0rem 0rem;
 		background-image: repeating-linear-gradient(88deg,
@@ -14,6 +10,7 @@ rain todo
 	}
 
 	50% {
+
 		background-image: repeating-linear-gradient(88deg,
 			var(--greenblue-lll) 0,
 			var(--greenblue-lll) .1rem,
@@ -67,48 +64,48 @@ rain todo
 		background-image: repeating-linear-gradient(90deg,
 			var(--nav-color-dark) 0,
 			var(--nav-color-dark) .01rem,
-			#eee0 .1rem,
-			#eee0 50%);
+			transparent .1rem,
+			transparent 50%);
 	}
 
 	92% {
 		background-image: repeating-linear-gradient(90deg,
 			var(--nav-color-dark) 0,
 			var(--nav-color-dark) .01rem,
-			#eee0 .1rem,
-			#eee0 50%);
+			transparent .1rem,
+			transparent 50%);
 	}
 
 	93% {
 		background-image: repeating-linear-gradient(90deg,
 			var(--nav-color-light) 0,
 			var(--nav-color-light) .1rem,
-			#eee0 .1rem,
-			#eee0 50%);
+			transparent .1rem,
+			transparent 50%);
 	}
 
 	96% {
 		background-image: repeating-linear-gradient(90deg,
 			var(--gnav-color-dark) 0,
 			var(--gnav-color-dark) .01rem,
-			#eee0 .1rem,
-			#eee0 50%);
+			transparent .1rem,
+			transparent 50%);
 	}
 
 	98% {
-		background-image: repeating-linear-gradient(90deg,
+		backgr ound-image: repeating-linear-gradient(90deg,
 			var(--nav-color-dark) 0,
 			var(--nav-color-dark) .01rem,
-			#eee0 .1rem,
-			#eee0 50%);
+			transparent .1rem,
+			transparent 50%);
 	}
 
 	100% {
 		background-image: repeating-linear-gradient(90deg,
 			var(--nav-color-light) 0,
 			var(--nav-color-light) .1rem,
-			#eee0 .1rem,
-			#eee0 50%);
+			transparent .1rem,
+			transparent 50%);
 	}
 }
 
@@ -117,10 +114,59 @@ rain todo
 	background-image: repeating-linear-gradient(90deg,
 		var(--nav-color-dark) 0,
 		var(--nav-color-dark) .1rem,
-		#eee0 .1rem,
-		#eee0 50%);
+		transparent .1rem,
+		transparent 50%);
 	animation:
 		horizontalscrollrain 2s linear infinite,
 		lightning 10s steps(200, jump-start) infinite;
-
 }
+
+.starry {}
+
+#stars-small {
+	float: left;
+	height: 2px;
+	width: 2px;
+	box-shadow:
+
+		30px 50px 10px #0ee,
+		40px 60px #e0e,
+		50px 70px #ee0,
+
+		100px 100px #fff,
+		102px 100px #ddd,
+		98px 100px #ddd,
+		100px 102px #ddd,
+		100px 98px #ddd;
+}
+
+
+/*
+
+pausing on this strategy. it's too uniform
+
+.starry {
+background: 
+	radial-gradient(circle, transparent 20%, #0ffe 20%, #0ffe 80%, transparent 80%, transparent), 
+	radial-gradient(circle, transparent 20%, #f00e 20%, #f00e 80%, transparent 80%, transparent) 57.5px 57.5px; 
+background-size: 115px 115px, 115px 115px, 57.5px 57.5px, 57.5px 57.5px;
+*/
+
+
+/*	animation:
+		horizontalscrollrain 2s linear infinite,
+		lightning 10s steps(200, jump-start) infinite;
+*/
+}
+
+
+/*
+background-color: #e5e5f7;
+opacity: 0.5;
+background: 
+	radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), 
+	radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 57.5px 57.5px, 
+	linear-gradient(#444cf7 4.6000000000000005px, transparent 4.6000000000000005px) 0 -2.3000000000000003px, 
+	linear-gradient(90deg, #444cf7 4.6000000000000005px, #e5e5f7 4.6000000000000005px) -2.3000000000000003px 0;
+background-size: 115px 115px, 115px 115px, 57.5px 57.5px, 57.5px 57.5px;
+*/

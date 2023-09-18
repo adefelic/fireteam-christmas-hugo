@@ -5,6 +5,6 @@ draft: false
 ---
 
 ## ???
-![woods](/dim-path.jpg)
+![who is that](/woods-chimney-1-dithered.jpeg)
 
 
