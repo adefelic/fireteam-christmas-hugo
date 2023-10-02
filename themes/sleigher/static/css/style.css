@@ -183,6 +183,7 @@ li {
 
 .single-container {
 	margin: 14px var(--main-side-margin) 0 var(--main-side-margin);
+	position: relative;
 }
 
 .single-title {
