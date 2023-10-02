@@ -8,7 +8,8 @@
 	--greenblue-l: #44b694;
 	--greenblue-ll: #a2dbc9;
 	--greenblue-lll: #e0f3ed;
-	--grayish: #363025;
+	--grayish: #292320;
+	--grayish-old: #363025;
 	--orange: #d08f06;
 
 	/* color scheme 2, in progress */
@@ -92,7 +93,7 @@ li {
 
 .grid-container {
 	display: grid;
-	grid: "head head" auto "nav main" 1fr / 12rem 1fr;
+	grid: "head head"auto "nav main"1fr / 12rem 1fr;
 	width: 100vw;
 	height: 100vh;
 	transition: 300ms;
@@ -100,7 +101,7 @@ li {
 
 
 .grid-container-nav-collapsed {
-	grid: "head head" auto "nav main" 1fr / 2rem 1fr;
+	grid: "head head"auto "nav main"1fr / 2rem 1fr;
 }
 
 .grid-item-head {
