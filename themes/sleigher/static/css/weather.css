@@ -161,6 +161,18 @@
 	}
 }
 
+#stars-s-a {
+	position: absolute;
+}
+
+#stars-s-b {
+	position: absolute;
+}
+
+#stars-l-c {
+	position: absolute;
+}
+
 .starry {
 	--darker: #555;
 	--dark: #888;

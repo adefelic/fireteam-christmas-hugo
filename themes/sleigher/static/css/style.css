@@ -99,7 +99,6 @@ li {
 	transition: 300ms;
 }
 
-
 .grid-container-nav-collapsed {
 	grid: "head head"auto "nav main"1fr / 2rem 1fr;
 }
@@ -119,7 +118,6 @@ li {
 	background-color: var(--main-background-color);
 }
 
-
 .grid-item-foot {
 	grid-area: foot;
 	background-image: url("images/dim-woods.jpg");
@@ -135,11 +133,30 @@ li {
 
 .title {
 	margin: 4px 0 4px var(--main-side-margin);
+	float: left;
 	font-size: 2rem;
 	font-family: "arial";
 	font-weight: lighter;
 	color: #efefef;
 }
+
+.header-button-list {
+	float: right;
+	margin: 4px var(--main-side-margin) 4px 0;
+}
+
+.header-button-item {}
+
+
+/* initial button state */
+#thunderstorm-button-image {
+	display: block;
+}
+
+#starry-button-image {
+	display: none;
+}
+
 
 /* left nav */
 
