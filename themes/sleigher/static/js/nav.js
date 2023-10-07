@@ -1,36 +1,42 @@
 if (document.readyState !== 'loading') {
 	addNavAccordionClickListener();
-	addThunderstormClickListener();
+	addMainBackgroundClickListener();
 } else {
 	document.addEventListener('DOMContentLoaded', function() {
 		addNavAccordionClickListener();
-		addThunderstormClickListener();
+		addMainBackgroundClickListener();
 	});
 }
 
 function addNavAccordionClickListener() {
 	const button = document.querySelector("#nav-button");
 	button.addEventListener("click", (event) => {
-		document.querySelector("#grid-container").classList.toggle("grid-container-nav-collapsed");
-		// todo find a way to toggle inner text
-		// navButton.innerHTML += "Fuction executed! "
+		const gridContainer = document.querySelector("#grid-container");
+		gridContainer.classList.toggle("grid-container-nav-collapsed");
+		if (gridContainer.classList.contains("grid-container-nav-collapsed")) {
+			button.innerHTML = "+";
+		} else {
+			button.innerHTML = "-";
+		}
 	});
 }
 
-function addThunderstormClickListener() {
+function addMainBackgroundClickListener() {
 	const button = document.querySelector("#thunderstorm-button");
 	button.addEventListener("click", (event) => {
-		document.querySelector(".grid-item-main").classList.toggle("starry");
-		document.querySelector(".grid-item-main").classList.toggle("thunderstorm");
-		if (document.querySelector("#thunderstorm-button-image").style.display !== "none") {
-			document.querySelector("#thunderstorm-button-image").style.display = "none";
+		const gridItemMain = document.querySelector(".grid-item-main");
+		gridItemMain.classList.toggle("starry");
+		gridItemMain.classList.toggle("thunderstorm");
+
+		const thunderstormButton = document.querySelector("#thunderstorm-button-image");
+		const starryButton = document.querySelector("#starry-button-image");
+
+		if (thunderstormButton.style.display !== "none") {
+			thunderstormButton.style.display = "none";
+			starryButton.style.display = "block";
 		} else {
-			document.querySelector("#thunderstorm-button-image").style.display = "block";
-		}
-		if (document.querySelector("#thunderstorm-button-image").style.display !== "none") {
-			document.querySelector("#starry-button-image").style.display = "none";
-		} else {
-			document.querySelector("#starry-button-image").style.display = "block";
+			thunderstormButton.style.display = "block";
+			starryButton.style.display = "none";
 		}
 	});
 }
