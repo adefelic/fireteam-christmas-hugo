@@ -5,10 +5,10 @@ theme = 'sleigher'
 assetDir = 'static'
 googleAnalytics = 'G-M447GK70GX'
 [menu]
-#	[[menu.main]]
-#		name = 'other'
+	[[menu.main]]
+		name = 'projects'
 #		pageRef = '/other'
-#		weight = 1
+		weight = 1
 	[[menu.main]]
 		name = 'recipes'
 #		pageRef = '/recipes'
