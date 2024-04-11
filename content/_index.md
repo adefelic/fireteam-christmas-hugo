@@ -8,11 +8,9 @@ hi everyone o/
 
 my name's adam. i play instruments, write code, grow plants and think thoughts
 
-this website is a place that you may witness some of my crimes
+<- here are some of the things i've done
 
-this website is another:
-[github](https://github.com/adefelic)
+here are some more -> [github](https://github.com/adefelic)
 
 ![who is that](/woods-chimney-1-dithered.jpeg)
-
 
