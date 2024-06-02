@@ -73,8 +73,9 @@ h2 {
 }
 
 p {
-	font-size: 1.4rem;
-	font-family: "Courier New";
+	font-size: 1.2rem;
+	font-family: "Arial Rounded", sans-serif;
+	font-weight: lighter;
 	color: var(--text-color);
 }
 
@@ -84,7 +85,13 @@ ul {
 }
 
 li {
-	font-size: 1.4rem;
+	font-size: 1.3rem;
+	font-family: "Courier New";
+	color: var(--nav-color-bright);
+}
+
+code {
+	font-size: 1.1rem;
 	font-family: "Courier New";
 	color: var(--nav-color-bright);
 }
