@@ -17,5 +17,3 @@ here are some screenshots of how it looks today:
 ![a green area](/cetus_4_5_24_green.png)
 
 ![some dialog](/cetus_4_5_24_dialog.png)
-
-
