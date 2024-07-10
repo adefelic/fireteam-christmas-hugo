@@ -1,6 +1,8 @@
 {{ $pages := .Site.RegularPages}}
 <ul class="nav-list">
-	<div id="nav-button" class="nav-list-item">-</div>
+	<li>
+		<div id="nav-button" class="nav-list-item">-</div>
+	</li>
 	{{ range .Site.Menus.main }}
 	<li class="nav-list-item">
 		<a class="nav-link">
@@ -8,15 +10,17 @@
 			{{ $text }}
 		</a>
 	</li>
-	<ul class="page-list">
-		{{ range where $pages "Section" .Name }}
-		<li class="page-list-item">
-			<a class="no-underline nav-link" href="{{ .Permalink }}">
-				{{ $text := print .Title | safeHTML }}
-				{{ $text }}
-			</a>
-		</li>
+	<li>
+		<ul class="page-list">
+			{{ range where $pages "Section" .Name }}
+			<li class="page-list-item">
+				<a class="no-underline nav-link" href="{{ .Permalink }}">
+					{{ $text := print .Title | safeHTML }}
+					{{ $text }}
+				</a>
+			</li>
+			{{ end }}
+		</ul>
+	<li>
 		{{ end }}
-	</ul>
-	{{ end }}
 </ul>
