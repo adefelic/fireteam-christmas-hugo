@@ -1,10 +1,10 @@
 if (document.readyState !== 'loading') {
 	addNavAccordionClickListener();
-	addMainBackgroundClickListener();
+	// addMainBackgroundClickListener();
 } else {
 	document.addEventListener('DOMContentLoaded', function() {
 		addNavAccordionClickListener();
-		addMainBackgroundClickListener();
+		// addMainBackgroundClickListener();
 	});
 }
 
