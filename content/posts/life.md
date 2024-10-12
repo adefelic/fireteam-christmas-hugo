@@ -1,7 +1,7 @@
 ---
 title: "things i've seen"
 # date: 2024-10-12T09:58:22-04:00
-draft: true
+draft: false
 ---
 
 {{<table class="center-items pad-top">}}
