@@ -6,7 +6,7 @@ assetDir = 'static'
 googleAnalytics = 'G-M447GK70GX'
 [menu]
 	[[menu.main]]
-		name = 'projects'
+		name = 'posts'
 #		pageRef = '/other'
 		weight = 1
 	[[menu.main]]

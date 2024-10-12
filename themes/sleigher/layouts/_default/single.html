@@ -1,6 +1,10 @@
 {{ define "main" }}
 <div class="single-container">
+	{{ if isset .Params "publishdate" }}
 	<h1 class="single-title">{{ .Title }}</h1>
+	{{ else }}
+	<h1 class="single-title center-items">{{ .Title }}</h1>
+	{{ end }}
 	<div class="single-metadata">
 		{{ partial "metadata.html" . }}
 	</div>

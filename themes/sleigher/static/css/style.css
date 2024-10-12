@@ -76,7 +76,8 @@ h2 {
 	color: var(--text-color);
 }
 
-p {
+p,
+table {
 	font-size: 1.2rem;
 	font-family: "Arial Rounded", sans-serif;
 	font-weight: lighter;
@@ -243,4 +244,13 @@ code {
 
 .single-img {
 	max-width: 100%;
+}
+
+.center-items {
+	display: grid;
+	place-items: center;
+}
+
+.pad-top {
+	padding-top: 2rem;
 }
