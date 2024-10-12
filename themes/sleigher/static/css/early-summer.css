@@ -1,0 +1,39 @@
+:root {
+	--main-side-margin: 10px;
+
+	/* color scheme 1 */
+	/* https://coolors.co/069e70-35c599-25896a-e0f3ed-292320-d08f06 */
+	/*	
+	--greenblue: #069e70;
+	--greenblue-b: #35c599;
+	--greenblue-d: #25896A;
+	--greenblue-lll: #e0f3ed;
+	--grayish: #292320;
+	--grayish-old: #363025;
+	--orange: #d08f06;
+*/
+	--greenblue: #02787E;
+	--greenblue-b: #03ACB5;
+	--greenblue-d: #256A74;
+	--greenblue-lll: #E0EDEF;
+	--grayish: #2A1314;
+	--orange: #9D6D39;
+
+	/* color scheme 2, in progress */
+	--dirt: #431701;
+	--lettuce: #6a0113;
+	--lettuce-b: #89031b;
+	--straw: #ceb665;
+
+	--nav-color: var(--greenblue);
+	--nav-color-bright: var(--greenblue-b);
+	--main-background-color: var(--grayish);
+	--text-color: var(--orange);
+
+	/*	
+	--nav-color: var(--lettuce);
+	--nav-color-bright: var(--lettuce-b);
+	--main-background-color: var(--dirt);
+	--text-color: var(--straw);
+	*/
+}
