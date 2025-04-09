@@ -3,6 +3,7 @@
 	<li>
 		<div id="nav-button" class="nav-list-item">-</div>
 	</li>
+
 	{{ range .Site.Menus.main }}
 	<li class="nav-list-item">
 		<a class="nav-link">
@@ -22,5 +23,16 @@
 			{{ end }}
 		</ul>
 	<li>
-		{{ end }}
+	{{ end }}
+
+	{{ range .Site.Menus.extra }}
+	<li class="nav-list-item">
+		~
+		<a class="nav-link" href="{{ .URL |relURL }}">
+			{{ $text := print .Name | safeHTML }}
+			{{ $text }}
+		</a>
+		~
+	</li>
+	{{ end }}
 </ul>

@@ -176,7 +176,7 @@ code {
 }
 
 .nav-list {
-	margin: 0 14px 0 var(--main-side-margin);
+	margin: 0 14px 14px var(--main-side-margin);
 	padding: unset;
 	list-style-type: none;
 }

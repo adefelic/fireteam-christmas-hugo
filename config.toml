@@ -16,3 +16,8 @@ assetDir = 'static'
 		name = 'transcriptions'
 #		pageRef = '/transcriptions'
 		weight = 3
+	[[menu.extra]]
+		name = 'cool links'
+		pageRef = '/links'
+		url = '/links'
+		weight = 4
