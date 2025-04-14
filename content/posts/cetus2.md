@@ -15,7 +15,7 @@ i've gotten farther but not substantially. what has happened:
 that's about it. while i'm listing things, i will share that progress has slowed for these two reasons:
 
 1. the game now takes up enough space that i need to think about memory banking. gonna need to refactor everything so that banking is taken into consideration. onerous! so far this looks like it wilkl result in a single giga-commit as it's sort of all-or-nothing. the game will crash quickly from a bad access or run just fine.
-2. i went back to college for a semester to finish an old computer science degree, now that i've decided i mostly want out of the software industry. it's a lot of commuting and work and altogether takes most of my executive functioning to do. sry game ;(
+2. i went back to college for a semester to finish an old computer science degree. it's a lot of commuting and work and altogether takes most of my executive functioning to do. sry game ;(
 
 on the bright side taking some steps away has allowed me to stew a bit more on what the game's premise could be and i think i'm liking what i've thought up so far. i think it will be based off of a dream i had once that i will call "night road dream".
 
