@@ -4,5 +4,4 @@ title: "cool links"
 draft: false
 ---
 
-
 simple email encryption tutorial with GPG: https://emailselfdefense.fsf.org/en/ 
