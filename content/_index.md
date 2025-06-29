@@ -12,5 +12,5 @@ my name's adam. i play instruments, write code, grow plants and think thoughts
 
 here are some more -> [github](https://github.com/adefelic)
 
-![who is that](/woods-chimney-1-dithered.jpeg)
+![hmm](/bleak_beach.jpg)
 

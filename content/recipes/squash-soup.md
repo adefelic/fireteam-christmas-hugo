@@ -1,5 +1,5 @@
 ---
-title: "savory pumpkin soup"
+title: "pumpkin soup"
 date: 2024-12-26T18:11:36-05:00
 draft: false
 ---
